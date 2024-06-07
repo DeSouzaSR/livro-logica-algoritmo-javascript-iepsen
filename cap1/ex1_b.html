@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const conta = Number(prompt("Valor da conta:")); // reais
+      const quantidadeClientes = Number(prompt("Quantidade de clientes:"));
+
+      const valorPorCliente = conta / quantidadeClientes;
+
+      alert(
+        `Valor por cliente: R$ ${valorPorCliente.toLocaleString("pt-br", {
+          style: "decimal",
+          maximumFractionDigits: 2,
+        })}`
+      );
+    </script>
+  </body>
+</html>
